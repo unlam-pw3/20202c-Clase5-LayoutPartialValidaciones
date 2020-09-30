@@ -1,0 +1,10 @@
+﻿@model _20202c_Clase5_LayoutsValidaciones.Models.Usuario
+
+@if (Model != null)
+{
+    <a href="/usuario/perfil/@Model.IdUsuario">
+        <img src="@Model.AvatarUrl" height="50" />
+    </a>
+    <a href="/Usuario/Perfil/@Model.IdUsuario">@Model.NombreUsuario</a>
+
+}

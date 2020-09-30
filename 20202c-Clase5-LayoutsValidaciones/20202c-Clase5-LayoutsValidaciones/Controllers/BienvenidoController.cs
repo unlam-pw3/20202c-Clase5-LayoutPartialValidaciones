@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _20202c_Clase5_LayoutsValidaciones.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,6 +22,17 @@ namespace _20202c_Clase5_LayoutsValidaciones.Controllers
 
         public ActionResult VistaConLayoutAnidado()
         {
+            return View();
+        }
+
+        public ActionResult VistaConPartialViewTipada()
+        {
+            var usuarioActual = new Usuario();
+            usuarioActual.AvatarUrl = "https://image.flaticon.com/icons/png/512/147/147136.png";
+            usuarioActual.NombreUsuario = "Vegeta";
+
+            ViewBag.UsuarioActual = usuarioActual;
+
             return View();
         }
     }
