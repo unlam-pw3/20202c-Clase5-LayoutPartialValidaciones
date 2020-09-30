@@ -32,7 +32,10 @@ namespace _20202c_Clase5_LayoutsValidaciones.Controllers
         [HttpPost]
         public ActionResult Alta(Usuario usuario)
         {
-            ListaUsuarios.Add(usuario);
+            if (ModelState.IsValid)
+            {
+                ListaUsuarios.Add(usuario);
+            }
             //required
             //stringlength
             //rango
