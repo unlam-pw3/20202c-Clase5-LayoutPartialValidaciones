@@ -106,6 +106,8 @@
     <Content Include="Views\Bienvenido\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutConRegiones.cshtml" />
     <Content Include="Views\Bienvenido\VistaConRegiones.cshtml" />
+    <Content Include="Views\Shared\_LayoutAnidado.cshtml" />
+    <Content Include="Views\Bienvenido\VistaConLayoutAnidado.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

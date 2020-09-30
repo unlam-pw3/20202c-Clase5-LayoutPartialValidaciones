@@ -18,5 +18,10 @@ namespace _20202c_Clase5_LayoutsValidaciones.Controllers
         {
             return View();
         }
+
+        public ActionResult VistaConLayoutAnidado()
+        {
+            return View();
+        }
     }
 }
