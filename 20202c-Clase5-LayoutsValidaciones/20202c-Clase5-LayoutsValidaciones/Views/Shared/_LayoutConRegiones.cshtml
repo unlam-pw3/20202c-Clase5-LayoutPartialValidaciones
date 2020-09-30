@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @RenderSection("HeadScripts", false)
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <div>Pie de pagina:</div>
+    @RenderSection("PieDePagina", false)
+    <div>debajo de pie de pagina</div>
+    @RenderSection("BottomScripts", false)
+</body>
+</html>
