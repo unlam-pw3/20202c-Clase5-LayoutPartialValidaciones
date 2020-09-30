@@ -1,0 +1,32 @@
+﻿@model _20202c_Clase5_LayoutsValidaciones.Models.Usuario
+
+@{
+    ViewBag.Title = "Alta";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>Alta</h2>
+
+<form action="/usuarios/Alta" method="post">
+
+    <div>
+        Nombre de usuario: @Html.EditorFor(Model => Model.NombreUsuario)
+    </div>
+    <div>
+        @Html.DisplayNameFor(Model => Model.Email): @Html.EditorFor(Model => Model.Email)
+    </div>
+    <div>
+        @Html.DisplayNameFor(Model => Model.Edad): @Html.EditorFor(Model => Model.Edad)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(Model => Model.Contrasenia): @Html.EditorFor(Model => Model.Contrasenia)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(Model => Model.Biografia): @Html.EditorFor(Model => Model.Biografia)
+    </div>
+
+    <input type="submit" name="btnGuardar" value="Guardar" />
+</form>
+
