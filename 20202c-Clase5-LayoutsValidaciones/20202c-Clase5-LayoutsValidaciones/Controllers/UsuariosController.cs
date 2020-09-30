@@ -36,13 +36,7 @@ namespace _20202c_Clase5_LayoutsValidaciones.Controllers
             {
                 ListaUsuarios.Add(usuario);
             }
-            //required
-            //stringlength
-            //rango
-            //compare
-            //regularexpression
-            //customvalidation
-            //emailaddress
+          
             return View();
         }
     }

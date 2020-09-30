@@ -8,12 +8,15 @@
 <h2>Alta</h2>
 
 <form action="/usuarios/Alta" method="post">
-    <div style="display:none">
+    <div>
         <div style="color:red">
             @Html.ValidationMessageFor(Model => Model.NombreUsuario)
         </div>
         <div style="color:red">
             @Html.ValidationMessageFor(Model => Model.Email)
+        </div>
+        <div style="color:red">
+            @Html.ValidationMessageFor(Model => Model.ReEmail)
         </div>
         <div style="color:red">
             @Html.ValidationMessageFor(Model => Model.Edad)
@@ -27,10 +30,12 @@
     </div>
     <div>
         Nombre de usuario: @Html.EditorFor(Model => Model.NombreUsuario)
-        @Html.ValidationMessageFor(Model => Model.NombreUsuario)
     </div>
     <div>
         @Html.DisplayNameFor(Model => Model.Email): @Html.EditorFor(Model => Model.Email)
+    </div>
+    <div>
+        @Html.DisplayNameFor(Model => Model.ReEmail): @Html.EditorFor(Model => Model.ReEmail)
     </div>
     <div>
         @Html.DisplayNameFor(Model => Model.Edad): @Html.EditorFor(Model => Model.Edad)
