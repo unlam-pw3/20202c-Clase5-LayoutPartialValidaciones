@@ -12,6 +12,8 @@
 }
 <h2>Alta</h2>
 <form action="/usuarios/Alta" method="post">
+    @Html.AntiForgeryToken()
+
     <div>
         <div style="color:red">
             @Html.ValidationMessageFor(Model => Model.NombreUsuario)

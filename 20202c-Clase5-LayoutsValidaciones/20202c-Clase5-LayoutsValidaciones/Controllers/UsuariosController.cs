@@ -30,6 +30,7 @@ namespace _20202c_Clase5_LayoutsValidaciones.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Alta(Usuario usuario)
         {
             if (ModelState.IsValid)
