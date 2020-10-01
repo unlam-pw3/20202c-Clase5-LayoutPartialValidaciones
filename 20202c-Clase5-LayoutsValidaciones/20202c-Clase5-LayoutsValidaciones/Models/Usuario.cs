@@ -32,6 +32,7 @@ namespace _20202c_Clase5_LayoutsValidaciones.Models
 
         [Required (ErrorMessage = "Contraseña es requerida")]
         [StringLength(20, ErrorMessage ="La Contraseña debe ser de 8 a 20 caracteres", MinimumLength =8)]
+        [RegularExpression(".*[A-Z].*", ErrorMessage ="Debe usar al menos una mayúscula")]
         public string Contrasenia { get; set; }
 
         [Required (ErrorMessage = "Edad es requerida")]
